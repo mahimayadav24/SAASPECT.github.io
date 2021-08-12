@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts Starts here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <!-- External CSS starts here -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>SAASPECT - Test</title>
+</head>
+
+<body>
+    <section>
+        <div class="Login__Wrapper">
+            <div class='Login__Row'>
+                <div class='Login__col'>
+                    <div class='Vector__Col'>
+                        <img id="img__first" src="./img/5150721.jpg" alt="">
+                    </div>
+                </div>
+                <div class='Login__col'>
+                    <div class='Authentication__col'>
+                        <div class="Center__Text">
+                            <h1>Sign Up</h1>
+                        </div>
+                        <div class="rght__col">
+                            <div>
+                                <label for="">Name</label> <br>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label for="">Email</label> <br>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label for="">Password </label> <br>
+                                <input type="password" name="password" id="password">
+                                <a class="icons"><i class="bi bi-eye-slash" id="togglePassword"></i></a>
+                            </div>
+                            <div id="Positioning">
+                                <label for="">Password </label> <br>
+                                <input type="password" name="password1" id="password1">
+                                <a><i class="bi bi-eye-slash Icons__hide" id="togglePassword1"></i></a>
+                            </div>
+                            <div class="BTN__center">
+                                <button class="btn">Sign Up</button>
+                            </div>
+                            <div>
+                                <p>Or Connect With</p>
+                            </div>
+
+                            <ul id="Top__side">
+                                <div class="logo__part">
+                                    <li><img id="img__sec" src="./img/microsoft.png" alt=""></li>
+                                    <li><img id="img__sec" src="./img/facebook.png" alt=""></li>
+                                    <li><img id="img__sec" src="./img/search.png" alt=""></li>
+                                    <li><img id="img__sec" src="./img/linkedin.png" alt=""></li>
+                                </div>
+                            </ul>
+
+                        </div>
+                        <div>
+                            <h5 class="text_phe">Already have an Account? <span>Login</span></h5>
+                        </div>
+                        <div class="login">
+                            <h2>Login</h2>
+                            <div>
+                                <label for="">Email</label> <br>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label for="">Passward </label> <br>
+                                <input type="text">
+
+                            </div>
+                            <div class="BTN__center">
+                                <button class="btn">Login</button>
+                            </div>
+                            <div>
+                                <p>Or Connect With</p>
+                            </div>
+
+                            <ul>
+                                <div class="logo__part">
+                                    <li><img id="img__sec" src="./img/microsoft.png" alt=""></li>
+                                    <li><img id="img__sec" src="./img/facebook.png" alt=""></li>
+                                    <li><img id="img__sec" src="./img/search.png" alt=""></li>
+                                    <li><img id="img__sec" src="./img/linkedin.png" alt=""></li>
+                                </div>
+                            </ul>
+                            <div>
+                                <h5 class="text_phe">Don`t have an account? <span>Signup</span></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Hide show Password starts here -->
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+        togglePassword.addEventListener('click', function (e) {
+            // toggle the type attribute
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            // toggle the eye / eye slash icon
+            this.classList.toggle('bi-eye');
+        });
+    </script>
+    <!-- Hide show password ends here -->
+
+    <script>
+        const togglePassword1 = document.querySelector('#togglePassword1');
+        const password1 = document.querySelector('#password1');
+        togglePassword1.addEventListener('click', function (e) {
+            // toggle the type attribute
+            const type = password1.getAttribute('type') === 'password' ? 'text' : 'password';
+            password1.setAttribute('type', type);
+            // toggle the eye / eye slash icon
+            this.classList.toggle('bi-eye');
+        });
+    </script>
+</body>
+
+</html>
